@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial;
+    font-size: 14px;
+    color:#000;
+    margin:0;
+}
+
+
+/* area do menu */
+
+header {
+    display:block;
+    margin-bottom:70px;
+}
+.header {
+    display:flex;
+    justify-content:space-between; /* para deixar o conteúdo nas pontas */
+    align-items:center;
+    background-color: rgb(30, 30, 30);
+    color: #b99224;
+    width:100%;
+    height:70px;
+    text-transform: uppercase;
+    font-weight:700;
+    position:fixed; /* para deixar o menu superior fixo */
+    top:0; /* para deixar o menu superior fixo */
+}
+.logo {
+    margin-left:10px;
+}
+nav ul { /* display flex na UL e não na header */
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+    display: flex;
+    align-content: center;
+}
+nav ul li a {
+    display: block; /* para poder por bordas no link */
+    text-decoration: none;
+    padding: 0px 20px;
+    list-style-type: none;
+    color: #b99224;
+}
+nav ul li a:hover {
+    color: seashell;
+    background-color: slategray;
+}
+.menu-opener {
+    display:none;
+}
+
+/* área do banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height:calc(100vh - 70px);
+}
+.banner-body {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    margin: auto;
+}
+.banner h1 {
+    font-size:50px;
+    color: #FFF;
+    text-shadow: 2px 3px 5px #333;
+}
+.banner h3 {
+    font-size:28px;
+    color: #FFF;
+    text-shadow: 2px 3px 5px #333;
+}
+.highlights {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(140, 190, 255);
+}
+.hightlights-body {
+    display: flex;
+    flex-direction: column;
+    max-width:1100px;
+    flex-wrap: wrap;
+}
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    max-width:1100px;
+}
+.hl-title {
+    font-size: 14px;
+    color:#222;
+}
+.city {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-img img {
+    border:0 solid #333;
+    border-radius: 15px;
+}
+
+.city-name {
+    padding-top:5px;
+    font-size:16px;
+    font-weight: 700;
+}
+.city-resume {
+    padding:5px 0px;
+    font-size:14px;
+}
+.city-desc {
+    font-size:12px;
+    display: flex;
+    text-align: justify;
+    width:329px;
+    padding: 12px 0px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    color: #b99224;
+}
+footer .container {
+    width: 1100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+}
+footer .whats-logo {
+    width:50px;
+    height:50px;
+}
+.whats {
+    display:flex;
+    align-items: center;
+}
+footer .face-logo {
+    width:50px;
+    height:50px;
+}
+.face {
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+/* ÁREA DE RESPONSIVIDADE */
+
+
+
+
+/* responsividade tablet */
+
+@media (min-width:396px) and (max-width:800px) {
+    .logo {
+        margin-left:15px;
+    }
+    .header .menu-opener {
+        display:flex;
+        width:52px;
+        height:50px;
+        margin-right:25px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:35vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:23px;
+        font-size:18px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .banner h1 {
+        margin-left:0px;
+        font-size:40px;
+        text-align:center;
+    }
+    .banner h3 {
+        margin-left:0px;
+        font-size:22px;
+        text-align:center;
+    }
+    .hightlights-body {
+        width:98%;
+        align-items: center;
+    }
+    .city {
+        align-items: center;
+    }
+    .city-desc {
+        font-size:13px;
+        margin-bottom:6px;
+    }
+    footer .container {
+        width:98%;
+        font-size:13px;
+        align-content:center;
+        padding:6px;
+    }
+}
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width:395px) {
+    .logo {
+        margin-left:10px;
+    }
+    .menu-opener {
+        display:flex;
+        width:60px;
+        height:45px;
+        padding-right:15px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:21px;
+        font-size:16px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .banner h1 {
+        margin-left:0px;
+        font-size:40px;
+        text-align:center;
+    }
+    .banner h3 {
+        margin-left:0px;
+        font-size:19px;
+        text-align:center;
+    }
+    .hightlights-body {
+        width:98%;
+        align-items:center;
+    }
+    .city {
+        align-items:center;
+    }
+    .city-img img {
+        width:300px;
+    }
+    .city-desc {
+        font-size:13px;
+        margin-bottom:6px;
+        width:300px;
+    }
+    footer .container {
+        width:98%;
+        font-size:12px;
+        align-content:center;
+        padding:5px;
+    }
+}

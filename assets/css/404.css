@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", Arial;
+    font-size: 13px;
+    color:#000;
+    margin:0;
+    background-color: rgb(140, 190, 255);
+}
+
+
+/* HEADER */
+header {
+    display: block;
+    margin-bottom:70px;
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* para deixar o conteúdo nas pontas */
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    color: #b99224;
+    width:100%;
+    height: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position:fixed; /* para deixar o menu superior fixo */
+    top:0; /* para deixar o menu superior fixo */
+}
+.logo {
+    margin-left:10px;
+}
+.header ul { /* display flex na UL e não na header */
+    display: flex;
+    list-style-type: none;
+}
+.header ul li {
+    display: flex;
+    align-content: center;
+}
+.header ul li a {
+    display: block; /* para poder por bordas no link */
+    text-decoration: none;
+    padding: 0px 20px;
+    list-style-type: none;
+    color: #b99224;
+}
+.header ul li a:hover {
+    color: seashell;
+    background-color: slategray;
+}
+.menu-opener {
+    display:none;
+}
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.text {
+    font-size:35px;
+    font-weight:bolder;
+    margin-bottom:30px;
+    text-align:center;
+}
+.link a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    width:250px;
+    height:50px;
+    background:linear-gradient(45deg, #00F, #000);
+    border:1px solid black;
+    border-radius: 20px;
+    font-size:22px;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 3px 5px 10px #888;
+    text-shadow: 2px 2px 6px #444;
+}
+.link a:hover {
+    background:linear-gradient(0deg, rgb(86, 83, 232), rgb(113, 110, 255));
+}
+
+/* FOOTER */
+footer {
+    margin-top: 15px;
+    background-color: rgb(30, 30, 30);
+    color: #b99224;
+}
+footer .container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+}
+footer .whats-logo {
+    width:50px;
+    height:50px;
+}
+.whats {
+    display:flex;
+    align-items: center;
+}
+footer .face-logo {
+    width:50px;
+    height:50px;
+}
+.face {
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width:395px) {
+.logo {
+    margin-left:10px;
+}
+.menu-opener {
+    display:flex;
+    width:60px;
+    height:45px;
+    padding-right:15px;
+}
+nav {
+    display:none;
+    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+    top:70px; /* para deixar na altura 70px, position:absolute acionado */
+    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+    width:40vw; /* largura de 40% da página */
+    height:auto;
+    justify-content: center;
+}
+nav ul {
+    flex-direction:column; /* para manter um link abaixo do outro */
+    padding:0px;
+}
+nav ul li {
+    margin-bottom:21px;
+    font-size:16px;
+    justify-content: center;
+}
+nav ul li a {
+    padding:0px 0px 0px 0px;
+}
+nav ul li:last-child {
+    margin-bottom: 0px;
+}
+.image img {
+    width:370px;
+} 
+.text {
+    font-size:27px;
+    margin-bottom:25px;
+}
+.link a {
+    width:220px;
+    height:45px;
+    font-size:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:8px;
+}
+footer {
+    margin-top:12px;
+}
+footer .container {
+    padding:6px;
+    width:100%;
+}
+footer .whats-logo {
+    width:45px;
+    height:45px;
+}
+footer .face-logo {
+    width:42px;
+    height:42px;
+}
+}
+
+/* RESPONSIVIDADE TABLETS */
+
+@media (min-width:396px) and (max-width:800px) {
+.menu-opener { /* para exibir o botão de ativação do menu mobile */
+    display:block;
+    margin-right:25px;
+    width:50px;
+    height:48px;
+}
+nav {
+    display:none;
+    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+    top:70px; /* para deixar na altura 70px, position:absolute acionado */
+    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+    width:30vw; /* largura de 40% da página */
+    height:auto;
+    justify-content: center;
+}
+nav ul {
+    flex-direction:column; /* para manter um link abaixo do outro */
+    padding:0px;
+}
+nav ul li {
+    margin-bottom:23px;
+    font-size:18px;
+    justify-content: center;
+}
+nav ul li a {
+    padding:0px 0px 0px 0px;
+}
+nav ul li:last-child {
+    margin-bottom: 0px;
+}
+.image img {
+    width:370px;
+}
+.text {
+    font-size:25px;
+    margin-bottom:25px;
+}
+.link a {
+    width:220px;
+    height:45px;
+    font-size:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:8px;
+}
+footer {
+    margin-top:12px;
+}
+footer .container {
+    padding:6px;
+    width:98%;
+    justify-content: space-between;
+}
+footer .whats-logo {
+    width:45px;
+    height:45px;
+}
+footer .face-logo {
+    width:42px;
+    height:42px;
+}
+}
