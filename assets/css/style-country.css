@@ -137,6 +137,9 @@ H3 {
 .bold {
     font-weight:bolder;
 }
+.green {
+    color: green;
+}
 .tomadas {
     display:flex;
     justify-content:center;
