@@ -58,20 +58,34 @@ nav ul li a:hover {
 /* ÁREA DO CORPO DO SITE */
 
 .main {
-    display:flex;
+    display:inline-block;
     width:100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size:14px;
     color:#000;
-    margin:auto;
     background-color: rgb(140, 190, 255);
+    padding: 5px;
 }
 .container {
     display: flex;
     flex-direction:column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
     margin: auto;
     width:96%;
 }
+
+.container ul {
+    list-style-type: none;
+}
+.container li {
+    font-size:16px;
+}
+.container li a {
+    text-decoration:none;
+}
+
 
 H1 {
     font-size:25px;
@@ -87,19 +101,16 @@ H2 {
     padding:5px;
     color:#FFF;
 }
-.container ul {
-    list-style-type: none;
-    padding:0px;
-}
-.container li {
-    font-size:16px;
-    padding:4px;
-}
-.container li a {
-    text-decoration:none;
-}
 .sublist {
     margin-left:20px;
+}
+
+.country-box {
+    display:inline;
+    flex-direction:column;
+    align-items: center;
+    justify-content:baseline; /*altura*/
+    text-align: center;
 }
 
 /* área do footer */
@@ -173,19 +184,22 @@ footer .face-logo {
 
 
 
-
 /* RESPONSIVIDADE CELULARES */
 
 
 
 
-
-@media (max-width:395px) {
+@media (max-width:359px) {
 .menu-opener {
     display:flex;
-    width:49px;
+    width:50px;
     height:45px;
     padding-right:15px;
+}
+.logo {
+    margin-left:8px;
+    width: 136px;
+    height: 51px;
 }
 nav {
     display:none;
@@ -214,6 +228,8 @@ nav ul li:last-child {
     margin-bottom: 0px;
 }
 .main {
+    text-align:center;
+    align-items: center;
     font-size:13px;
 }
 .container {
@@ -229,6 +245,7 @@ H2 {
     text-shadow: 2px 3px 3px #222;
     padding:3px;
 }
+
 .country-name {
     font-size: 16px;
     padding-bottom: 8px;
@@ -261,80 +278,187 @@ footer .face-logo {
 }
 }
 
-@media only screen and (min-width:396px) and (max-width:460px) {
-.logo {
-    margin-left:10px;
+@media only screen and (min-width:360px) and (max-width:450px) {
+    .logo {
+        margin-left:10px;
+    }
+    .menu-opener {
+        display:flex;
+        width:60px;
+        height:45px;
+        padding-right:15px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:21px;
+        font-size:16px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        width:100%;
+    }
+    .container {
+        width:96%;
+        align-items: center;
+        justify-content: center;
+    }
+    H1 {
+        font-size:23px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2 {
+        font-size:20px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+
+    .country-name {
+        font-size: 19px;
+        padding-bottom: 9px;
+    }
+    .flag img {
+        width:138px;
+        height:92px;
+        border-radius: 11px;
+    }
+    .country-cities {
+        padding-bottom:9px;
+    }
+    .country-cities a {
+        padding:2px;
+    }
+    footer {
+        width:100%;
+    }
+    footer .container {
+        width:96%;
+        font-size:13px;
+    }
+    footer .whats-logo {
+        width:40px;
+        height:40px;
+    }
+    .whats {
+        display:flex;
+        align-items: center;
+    }
+    footer .face-logo {
+        width:38px;
+        height:38px;
+    }
 }
-.menu-opener {
-    display:flex;
-    width:60px;
-    height:45px;
-    padding-right:15px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom: 0px;
-}
-.main {
-    width:100%;
-    font-size: 13px;
-}
-.container {
-    width:96%;
-    align-items: center;
-    justify-content: center;
-}
-H1 {
-    font-size:20px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H2 {
-    font-size:18px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-footer {
-    width:100%;
-}
-footer .container {
-    width:96%;
-    font-size:12px;
-}
-footer .whats-logo {
-    width:40px;
-    height:40px;
-}
-.whats {
-    display:flex;
-    align-items: center;
-}
-footer .face-logo {
-    width:38px;
-    height:38px;
-}
+
+@media only screen and (min-width:451px) and (max-width:600px) {
+    .logo {
+        margin-left:10px;
+    }
+    .menu-opener {
+        display:flex;
+        width:60px;
+        height:45px;
+        padding-right:15px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:21px;
+        font-size:16px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        width:100%;
+        font-size: 14px;
+    }
+    .container {
+        width:96%;
+        align-items: center;
+        justify-content: center;
+    }
+    H1 {
+        font-size:20px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2 {
+        font-size:18px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+
+    .country-name {
+        font-size: 18px;
+        padding-bottom: 9px;
+    }
+    .flag img {
+        width:160px;
+        height:105px;
+        border-radius: 11px;
+    }
+    .country-cities {
+        padding-bottom:9px;
+    }
+    .country-cities a {
+        padding:2px;
+    }
+    footer {
+        width:100%;
+    }
+    footer .container {
+        width:96%;
+        font-size:12px;
+    }
+    footer .whats-logo {
+        width:40px;
+        height:40px;
+    }
+    .whats {
+        display:flex;
+        align-items: center;
+    }
+    footer .face-logo {
+        width:38px;
+        height:38px;
+    }
 }
 
 /* responsividade tablets */
