@@ -228,8 +228,9 @@ H2, H3 {
     text-align:center;
 }
 .atracao-texto--pic {
-    display:flex;
+    display:block;
     justify-content:center;
+    text-align: center;
     margin:10px 0px;
 }
 .atracao-texto--pic img {
