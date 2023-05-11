@@ -56,12 +56,11 @@ nav ul li a:hover {
 
 .main {
     display:flex;
-    width:97%;
     font-family: Arial, Helvetica, sans-serif;
     font-size:14px;
     color:#000;
     margin:auto;
-    padding: 30px;
+    padding-top: 20px;
     background-color: rgb(184, 217, 255);
 }
 .container {
@@ -69,7 +68,7 @@ nav ul li a:hover {
     flex-direction:column;
     margin:auto;
     align-content:flex-start;
-    padding: 5px;
+    padding: 15px;
 }
 .centered-image {
     width:329px;
@@ -174,7 +173,7 @@ H3 {
 /* área do footer */
 
 footer {
-    margin-top:15px;
+    margin-top:10px;
     background-color: rgb(30, 30, 30);
     color: #b99224;
 }
@@ -183,7 +182,6 @@ footer .container {
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    max-width:1100px;
 }
 footer .whats-logo {
     width:50px;
@@ -315,10 +313,8 @@ H2, H3 {
 }
 footer {
     padding-top:4px;
-    width:100%;
 }
 footer .container {
-    width:96%;
     font-size:12px;
 }
 footer .whats-logo {
@@ -546,7 +542,6 @@ footer {
 }
 footer .container {
     font-size:14px;
-    width: 96%;
 }
 footer .whats-logo {
     width:38px;
