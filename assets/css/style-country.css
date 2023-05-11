@@ -210,343 +210,343 @@ footer .face-logo {
 
 
 @media (max-width:395px) {
-.menu-opener {
-    display:flex;
-    width:49px;
-    height:45px;
-    padding-right:15px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom:0px;
-}
-.main {
-    font-size:13px;
-}
-.centered-image {
-    width:300px;
-    box-shadow: 2px 2px 3px black;
-}
-H1 {
-    font-size:17px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H2, H3 {
-    font-size:16px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-.cidades {
-    display:flex;
-    justify-content:center;
-}
-.cidades ul {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    padding:0px;
-}
-.cidades ul li {
-    display:flex;
-    flex-wrap:wrap;
-    text-align:center;
-}
-.cidades ul li a {
-    display:flex;
-    background-color: rgb(222, 229, 238);
-    border:1px solid #000;
-    border-radius:6px;
-    padding:5px;
-    text-decoration:none;
-    font-size:14px;
-    font-weight:bold;
-    justify-content:center;
-    width:130px;
-    height:32px;
-    align-items:center;
-    margin:2px;
-}
-.cidades ul li a:hover {
-    background-color: #222;
-    text-decoration:none;
-    color: #FFF;
-}
-.tomadas {
-    flex-wrap:wrap;
-    align-items:center;
-    width:auto;
-    padding-top:6px;
-}
-.tomadas img {
-    width:160px;
-    padding:0px;
-}
-.button_back_destinos {
-    width:185px;
-    height:20px;
-    border-radius:11px;
-    margin-top:10px;
-    padding:3px;
-}
-footer {
-    padding-top:4px;
-}
-footer .container {
-    font-size:12px;
-}
-footer .whats-logo {
-    width:35px;
-    height:35px;
-}
-footer .face-logo {
-    width:32px;
-    height:32px;
-}
+    .menu-opener {
+        display:flex;
+        width:49px;
+        height:45px;
+        padding-right:15px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:21px;
+        font-size:16px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom:0px;
+    }
+    .main {
+        font-size:13px;
+    }
+    .centered-image {
+        width:300px;
+        box-shadow: 2px 2px 3px black;
+    }
+    H1 {
+        font-size:17px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2, H3 {
+        font-size:16px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    .cidades {
+        display:flex;
+        justify-content:center;
+    }
+    .cidades ul {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        padding:0px;
+    }
+    .cidades ul li {
+        display:flex;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    .cidades ul li a {
+        display:flex;
+        background-color: rgb(222, 229, 238);
+        border:1px solid #000;
+        border-radius:6px;
+        padding:5px;
+        text-decoration:none;
+        font-size:14px;
+        font-weight:bold;
+        justify-content:center;
+        width:130px;
+        height:32px;
+        align-items:center;
+        margin:2px;
+    }
+    .cidades ul li a:hover {
+        background-color: #222;
+        text-decoration:none;
+        color: #FFF;
+    }
+    .tomadas {
+        flex-wrap:wrap;
+        align-items:center;
+        width:auto;
+        padding-top:6px;
+    }
+    .tomadas img {
+        width:160px;
+        padding:0px;
+    }
+    .button_back_destinos {
+        width:185px;
+        height:20px;
+        border-radius:11px;
+        margin-top:10px;
+        padding:3px;
+    }
+    footer {
+        padding-top:4px;
+    }
+    footer .container {
+        font-size:12px;
+    }
+    footer .whats-logo {
+        width:35px;
+        height:35px;
+    }
+    footer .face-logo {
+        width:32px;
+        height:32px;
+    }
 }
 
 @media (min-width:396px) and (max-width:460px) {
-.menu-opener {
-    display:flex;
-    width:49px;
-    height:45px;
-    padding-right:15px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom:0px;
-}
-.main {
-    font-size:14px;
-}
-.centered-image {
-    width:310px;
-    box-shadow: 2px 2px 3px black;
-    border-radius:10px;
-}
-H1 {
-    font-size:16px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H2, H3 {
-    font-size:15px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-.cidades {
-    display:flex;
-    justify-content:center;
-}
-.cidades ul {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    padding:0px;
-}
-.cidades ul li {
-    display:flex;
-    flex-wrap:wrap;
-    text-align:center;
-}
-.cidades ul li a {
-    display:flex;
-    background-color: rgb(222, 229, 238);
-    border:1px solid #000;
-    border-radius:6px;
-    padding:5px;
-    text-decoration:none;
-    font-size:13px;
-    font-weight:bold;
-    justify-content:center;
-    width:130px;
-    height:33px;
-    align-items:center;
-    margin:2px;
-}
-.cidades ul li a:hover {
-    background-color: #222;
-    text-decoration:none;
-    color: #FFF;
-}
-.tomadas {
-    flex-wrap:wrap;
-    align-items:center;
-    padding-top:6px;
-}
-.tomadas img {
-    width:170px;
-    padding:0px;
-}
-footer {
-    padding-top:5px;
-}
-footer .container {
-    font-size:12px;
-}
-footer .whats-logo {
-    width:35px;
-    height:35px;
-}
-footer .face-logo {
-    width:32px;
-    height:32px;
-}
+    .menu-opener {
+        display:flex;
+        width:49px;
+        height:45px;
+        padding-right:15px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:21px;
+        font-size:16px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom:0px;
+    }
+    .main {
+        font-size:14px;
+    }
+    .centered-image {
+        width:310px;
+        box-shadow: 2px 2px 3px black;
+        border-radius:10px;
+    }
+    H1 {
+        font-size:16px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2, H3 {
+        font-size:15px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    .cidades {
+        display:flex;
+        justify-content:center;
+    }
+    .cidades ul {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        padding:0px;
+    }
+    .cidades ul li {
+        display:flex;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    .cidades ul li a {
+        display:flex;
+        background-color: rgb(222, 229, 238);
+        border:1px solid #000;
+        border-radius:6px;
+        padding:5px;
+        text-decoration:none;
+        font-size:13px;
+        font-weight:bold;
+        justify-content:center;
+        width:130px;
+        height:33px;
+        align-items:center;
+        margin:2px;
+    }
+    .cidades ul li a:hover {
+        background-color: #222;
+        text-decoration:none;
+        color: #FFF;
+    }
+    .tomadas {
+        flex-wrap:wrap;
+        align-items:center;
+        padding-top:6px;
+    }
+    .tomadas img {
+        width:170px;
+        padding:0px;
+    }
+    footer {
+        padding-top:5px;
+    }
+    footer .container {
+        font-size:12px;
+    }
+    footer .whats-logo {
+        width:35px;
+        height:35px;
+    }
+    footer .face-logo {
+        width:32px;
+        height:32px;
+    }
 }
 
 /* responsividade tablets */
 
 @media (min-width:461px) and (max-width:800px) {
-.menu-opener {
-    display:flex;
-    width:51px;
-    height:47px;
-    padding-right:18px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:22px;
-    font-size:18px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom:0px;
-}
-.main {
-    font-size:14px;
-}
-.centered-image {
-    width:320px;
-    box-shadow:2px 2px 3px black;
-    border-radius:10px;
-}
-H1 {
-    font-size:19px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H2, H3 {
-    font-size:16px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-.cidades {
-    display:flex;
-    justify-content:center;
-}
-.cidades ul {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    padding:0px;
-}
-.cidades ul li {
-    display:flex;
-    flex-wrap:wrap;
-    text-align:center;
-}
-.cidades ul li a {
-    display:flex;
-    background-color: rgb(222, 229, 238);
-    border:1px solid #000;
-    border-radius:6px;
-    padding:5px;
-    text-decoration:none;
-    font-size:14px;
-    font-weight:bold;
-    justify-content:center;
-    width:130px;
-    height:33px;
-    align-items:center;
-    margin:2px;
-}
-.cidades ul li a:hover {
-    background-color: #222;
-    text-decoration:none;
-    color: #FFF;
-}
-.tomadas {
-    flex-wrap:wrap;
-    align-items:center;
-    padding-top:7px;
-}
-.tomadas img {
-    width:200px;
-    padding:0px;
-}
-footer {
-    padding-top:5px;
-}
-footer .container {
-    font-size:14px;
-}
-footer .whats-logo {
-    width:38px;
-    height:38px;
-}
-footer .face-logo {
-    width:35px;
-    height:35px;
-}
+    .menu-opener {
+        display:flex;
+        width:51px;
+        height:47px;
+        padding-right:18px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:22px;
+        font-size:18px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom:0px;
+    }
+    .main {
+        font-size:14px;
+    }
+    .centered-image {
+        width:320px;
+        box-shadow:2px 2px 3px black;
+        border-radius:10px;
+    }
+    H1 {
+        font-size:19px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2, H3 {
+        font-size:16px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    .cidades {
+        display:flex;
+        justify-content:center;
+    }
+    .cidades ul {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        padding:0px;
+    }
+    .cidades ul li {
+        display:flex;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    .cidades ul li a {
+        display:flex;
+        background-color: rgb(222, 229, 238);
+        border:1px solid #000;
+        border-radius:6px;
+        padding:5px;
+        text-decoration:none;
+        font-size:14px;
+        font-weight:bold;
+        justify-content:center;
+        width:130px;
+        height:33px;
+        align-items:center;
+        margin:2px;
+    }
+    .cidades ul li a:hover {
+        background-color: #222;
+        text-decoration:none;
+        color: #FFF;
+    }
+    .tomadas {
+        flex-wrap:wrap;
+        align-items:center;
+        padding-top:7px;
+    }
+    .tomadas img {
+        width:200px;
+        padding:0px;
+    }
+    footer {
+        padding-top:5px;
+    }
+    footer .container {
+        font-size:14px;
+    }
+    footer .whats-logo {
+        width:38px;
+        height:38px;
+    }
+    footer .face-logo {
+        width:35px;
+        height:35px;
+    }
 }
