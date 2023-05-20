@@ -214,7 +214,7 @@ H2, H3 {
 }
 .atracao-texto--area {
     padding-bottom:15px;
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
 }
 .atracao-texto--area:last-child {
     border-bottom: 0px solid black;
@@ -250,10 +250,10 @@ H2, H3 {
     font-size:15px;
     font-family: sans-serif;
     text-decoration: none;
-    margin-top:10px;
     padding:7px;
     box-shadow:3px 5px 10px #888;
     text-shadow:2px 2px 6px #444;
+    margin: 5px auto auto auto;
 }
 .button_back:hover {
     background:linear-gradient(0deg, rgb(86, 83, 232), rgb(113, 110, 255));
@@ -275,6 +275,7 @@ H2, H3 {
     padding:7px;
     box-shadow:3px 5px 10px #888;
     text-shadow:2px 2px 6px #444;
+    margin: 3px auto auto auto;
 }
 .button_back_country:hover {
     background:linear-gradient(0deg, rgb(255, 176, 59), rgb(113, 110, 255));
