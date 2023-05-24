@@ -61,14 +61,13 @@ nav ul li a:hover {
     color:#000;
     margin:auto;
     padding-top: 20px;
-    background-color: rgb(184, 217, 255);
 }
 .container {
     display:flex;
     flex-direction:column;
     margin:auto;
     align-content:flex-start;
-    padding: 15px;
+    width: 98%;
 }
 .centered-image {
     width:329px;
@@ -104,8 +103,10 @@ H3 {
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
+    padding:0px;
     list-style: none;
 }
+
 .cidades ul li {
     flex-wrap:wrap;
     text-align:center;
@@ -161,7 +162,7 @@ H3 {
     font-size:15px;
     font-family: sans-serif;
     text-decoration: none;
-    margin-top:10px;
+    margin:8px 0px 12px;
     padding:7px;
     box-shadow:3px 5px 10px #888;
     text-shadow:2px 2px 6px #444;
@@ -173,7 +174,6 @@ H3 {
 /* área do footer */
 
 footer {
-    margin-top:10px;
     background-color: rgb(30, 30, 30);
     color: #b99224;
 }
@@ -182,22 +182,23 @@ footer .container {
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
+    max-width:1100px;
 }
-footer .whats-logo {
+.whats-logo {
     width:50px;
     height:50px;
 }
 .whats {
     display:flex;
-    align-items:center;
+    align-items: center;
 }
-footer .face-logo {
-    width:50px;
-    height:50px;
+.face-logo {
+    width:42px;
+    height:42px;
 }
 .face {
     display:flex;
-    align-items: center;
+    align-items:center;
 }
 
 
@@ -496,14 +497,12 @@ footer .face-logo {
         justify-content:center;
     }
     .cidades ul {
-        display:flex;
-        justify-content:center;
         flex-wrap:wrap;
         padding:0px;
+        list-style-position: inside;
+        margin-left: 0px;
     }
     .cidades ul li {
-        display:flex;
-        flex-wrap:wrap;
         text-align:center;
     }
     .cidades ul li a {
@@ -519,7 +518,6 @@ footer .face-logo {
         width:130px;
         height:33px;
         align-items:center;
-        margin:2px;
     }
     .cidades ul li a:hover {
         background-color: #222;

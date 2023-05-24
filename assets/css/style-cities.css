@@ -57,7 +57,6 @@ nav ul li a:hover {
 
 .main {
     display:flex;
-    width:98%;
     font-family: Arial, Helvetica, sans-serif;
     font-size:14px;
     color:#000;
@@ -181,28 +180,6 @@ H2, H3 {
     color: #FFF;
 }
 
-/* TABELAS */
-
-.weather_table {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-}
-
-.weather_columns {
-    display: flex;
-    flex-direction: row;
-    width: 98%;
-}
-
-.weather_single_column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(99% / 14);
-    border: #000 solid 1px;
-}
-
 
 /* TEXTO */
 
@@ -215,6 +192,7 @@ H2, H3 {
 .atracao-texto--area {
     padding-bottom:15px;
     border-bottom: 3px solid black;
+    width: 100%;
 }
 .atracao-texto--area:last-child {
     border-bottom: 0px solid black;
