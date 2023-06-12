@@ -175,13 +175,13 @@ H3 {
 }
 
 .video-box {
+    align-self: center;
     flex-wrap: wrap;
     margin: auto;
-    align-self: center;
 }
 iframe {
-    width:390px;
-    height:223px;
+    width:329px;
+    height:219px;
 }
 
 /* área do footer */
@@ -324,6 +324,7 @@ footer .container {
         border-radius:11px;
         margin-top:10px;
         padding:3px;
+        font-size: 12px;
     }
     footer {
         padding-top:4px;
