@@ -122,73 +122,6 @@ footer .container {
 
 /* RESPONSIVIDADE CELULAR */
 
-@media (max-width:395px) {
-.logo {
-    margin-left:10px;
-}
-.menu-opener {
-    display:flex;
-    width:60px;
-    height:45px;
-    padding-right:15px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom: 0px;
-}
-.image img {
-    width:370px;
-} 
-.text {
-    font-size:27px;
-    margin-bottom:25px;
-}
-.link a {
-    width:220px;
-    height:45px;
-    font-size:20px;
-    margin-top:5px;
-    margin-bottom:5px;
-    padding:8px;
-}
-footer {
-    margin-top:12px;
-}
-footer .container {
-    padding:6px;
-    width:100%;
-}
-footer .whats-logo {
-    width:45px;
-    height:45px;
-}
-footer .face-logo {
-    width:42px;
-    height:42px;
-}
-}
 
 /* RESPONSIVIDADE TABLETS */
 
@@ -256,4 +189,76 @@ footer .face-logo {
     width:42px;
     height:42px;
 }
+}
+
+/* RESPONSIVIDADE CELULAR PEQUENO*/
+
+@media (max-width:395px) {
+    .logo {
+        margin-left:8px;
+    }
+    .menu-opener {
+        display:flex;
+        height:40px;
+        padding-right:15px;
+        width:60px;
+    }
+    nav {
+        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
+        display:none;
+        height:auto;
+        justify-content: center;
+        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
+        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
+        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
+        width:40vw; /*largura de 40% da página*/
+        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
+    }
+    nav ul {
+        flex-direction:column; /*mantem um link abaixo do outro*/
+        padding:0px;
+    }
+    nav ul li {
+        font-size:15px;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    nav ul li a {
+        padding:0;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .image img {
+        width:370px;
+    } 
+    .text {
+        font-size:27px;
+        margin-bottom:25px;
+    }
+    .link a {
+        width:220px;
+        height:45px;
+        font-size:20px;
+        margin-top:5px;
+        margin-bottom:5px;
+        padding:8px;
+    }
+    footer {
+        margin-top:12px;
+    }
+    footer .container {
+        align-content:center;
+        font-size:10px;
+        padding:3px;
+    }
+    footer .whats-logo {
+        height: 33px;
+        width: 33px;
+    }
+    footer .face-logo {
+        height: 30px;
+        width: 30px;
+    }
 }

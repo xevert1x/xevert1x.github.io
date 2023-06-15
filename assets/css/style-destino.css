@@ -184,109 +184,14 @@ footer .face-logo {
 
 
 
-/* RESPONSIVIDADE CELULARES */
+/*ÁREA DE RESPONSIVIDADE */
 
-
-
-
-@media (max-width:359px) {
-.menu-opener {
-    display:flex;
-    width:50px;
-    height:45px;
-    padding-right:15px;
-}
-.logo {
-    margin-left:8px;
-    width: 136px;
-    height: 51px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom: 0px;
-}
-.main {
-    text-align:center;
-    align-items: center;
-    font-size:13px;
-}
-.container {
-    align-items: center;
-}
-H1 {
-    font-size:18px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H2 {
-    font-size:17px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-
-.country-name {
-    font-size: 16px;
-    padding-bottom: 8px;
-}
-.flag img {
-    width:120px;
-    height:80px;
-    border-radius: 10px;
-}
-.country-cities {
-    padding-bottom:8px;
-}
-.country-cities a {
-    padding:3px;
-}
-footer {
-    width:100%;
-}
-footer .container {
-    width:96%;
-    font-size:12px;
-}
-footer .whats-logo {
-    width:35px;
-    height:35px;
-}
-footer .face-logo {
-    width:32px;
-    height:32px;
-}
-}
-
-@media only screen and (min-width:360px) and (max-width:450px) {
-    .logo {
-        margin-left:10px;
-    }
+@media (min-width:461px) and (max-width:800px) {
     .menu-opener {
         display:flex;
-        width:60px;
-        height:45px;
-        padding-right:15px;
+        width:55px;
+        height:50px;
+        margin-right:15px;
     }
     nav {
         display:none;
@@ -295,7 +200,7 @@ footer .face-logo {
         top:70px; /* para deixar na altura 70px, position:absolute acionado */
         right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
         background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-        width:40vw; /* largura de 40% da página */
+        width:35vw; /* largura de 40% da página */
         height:auto;
         justify-content: center;
     }
@@ -316,56 +221,51 @@ footer .face-logo {
     }
     .main {
         width:100%;
+        font-size:13px;
     }
     .container {
         width:96%;
         align-items: center;
-        justify-content: center;
     }
     H1 {
-        font-size:23px;
+        font-size:21px;
         text-shadow: 2px 3px 3px #222;
         padding:0px;
     }
     H2 {
-        font-size:20px;
+        font-size:18px;
         text-shadow: 2px 3px 3px #222;
         padding:3px;
     }
-
     .country-name {
-        font-size: 19px;
-        padding-bottom: 9px;
+        font-size: 17px;
+        padding-bottom:9px;
     }
     .flag img {
-        width:138px;
-        height:92px;
-        border-radius: 11px;
+        width:150px;
+        height:100px;
+        border-radius:12px;
     }
     .country-cities {
         padding-bottom:9px;
     }
     .country-cities a {
-        padding:2px;
+        padding:4px;
     }
     footer {
         width:100%;
     }
     footer .container {
-        width:96%;
+        width:95%;
         font-size:13px;
     }
     footer .whats-logo {
-        width:40px;
-        height:40px;
-    }
-    .whats {
-        display:flex;
-        align-items: center;
-    }
-    footer .face-logo {
         width:38px;
         height:38px;
+    }
+    footer .face-logo {
+        width:35px;
+        height:35px;
     }
 }
 
@@ -460,87 +360,182 @@ footer .face-logo {
     }
 }
 
-/* responsividade tablets */
+@media only screen and (min-width:396px) and (max-width:450px) {
+    .logo {
+        margin-left:10px;
+    }
+    .menu-opener {
+        display:flex;
+        width:60px;
+        height:45px;
+        padding-right:15px;
+    }
+    nav {
+        display:none;
+        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
+        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
+        top:70px; /* para deixar na altura 70px, position:absolute acionado */
+        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
+        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
+        width:40vw; /* largura de 40% da página */
+        height:auto;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction:column; /* para manter um link abaixo do outro */
+        padding:0px;
+    }
+    nav ul li {
+        margin-bottom:21px;
+        font-size:16px;
+        justify-content: center;
+    }
+    nav ul li a {
+        padding:0px 0px 0px 0px;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        width:100%;
+    }
+    .container {
+        width:96%;
+        align-items: center;
+        justify-content: center;
+    }
+    H1 {
+        font-size:23px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2 {
+        font-size:20px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
 
-@media (min-width:461px) and (max-width:800px) {
-.menu-opener {
-    display:flex;
-    width:55px;
-    height:50px;
-    margin-right:15px;
+    .country-name {
+        font-size: 19px;
+        padding-bottom: 9px;
+    }
+    .flag img {
+        width:138px;
+        height:92px;
+        border-radius: 11px;
+    }
+    .country-cities {
+        padding-bottom:9px;
+    }
+    .country-cities a {
+        padding:2px;
+    }
+    footer {
+        width:100%;
+    }
+    footer .container {
+        width:96%;
+        font-size:13px;
+    }
+    footer .whats-logo {
+        width:40px;
+        height:40px;
+    }
+    .whats {
+        display:flex;
+        align-items: center;
+    }
+    footer .face-logo {
+        width:38px;
+        height:38px;
+    }
 }
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:35vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom: 0px;
-}
-.main {
-    width:100%;
-    font-size:13px;
-}
-.container {
-    width:96%;
-    align-items: center;
-}
-H1 {
-    font-size:21px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H2 {
-    font-size:18px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-.country-name {
-    font-size: 17px;
-    padding-bottom:9px;
-}
-.flag img {
-    width:150px;
-    height:100px;
-    border-radius:12px;
-}
-.country-cities {
-    padding-bottom:9px;
-}
-.country-cities a {
-    padding:4px;
-}
-footer {
-    width:100%;
-}
-footer .container {
-    width:95%;
-    font-size:13px;
-}
-footer .whats-logo {
-    width:38px;
-    height:38px;
-}
-footer .face-logo {
-    width:35px;
-    height:35px;
-}
+
+/* responsividade celular pequeno */
+
+@media (max-width:395px) {
+    .logo {
+        margin-left:8px;
+    }
+    .menu-opener {
+        display:flex;
+        height:40px;
+        padding-right:15px;
+        width:60px;
+    }
+    nav {
+        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
+        display:none;
+        height:auto;
+        justify-content: center;
+        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
+        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
+        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
+        width:40vw; /*largura de 40% da página*/
+        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
+    }
+    nav ul {
+        flex-direction:column; /*mantem um link abaixo do outro*/
+        padding:0px;
+    }
+    nav ul li {
+        font-size:15px;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    nav ul li a {
+        padding:0;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        text-align:center;
+        align-items: center;
+        font-size:13px;
+    }
+    .container {
+        align-items: center;
+    }
+    H1 {
+        font-size:18px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H2 {
+        font-size:17px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    
+    .country-name {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+    .flag img {
+        width:120px;
+        height:80px;
+        border-radius: 10px;
+    }
+    .country-cities {
+        padding-bottom:8px;
+    }
+    .country-cities a {
+        padding:3px;
+    }
+
+    footer .container {
+        align-content:center;
+        font-size:10px;
+        padding:2px;
+        width: 98%;
+    }
+    footer .whats-logo {
+        height: 33px;
+        width: 33px;
+    }
+    footer .face-logo {
+        height: 30px;
+        width: 30px;
+    }
 }

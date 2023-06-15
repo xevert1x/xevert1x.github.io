@@ -135,80 +135,6 @@ footer .face-logo {
 
 
 
-@media (max-width:395px) {
-.menu-opener {
-    display:flex;
-    width:49px;
-    height:45px;
-    padding-right:15px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content: center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom: 0px;
-}
-.main {
-    width:100%;
-    font-size:13px;
-}
-.container {
-    width:96%;
-    align-items: center;
-}
-.videos-table {
-    justify-content: center;
-}
-iframe {
-    width:280px;
-    height:158px;
-}
-H1 {
-    font-size:19px;
-    text-shadow: 2px 3px 3px #222;
-    padding:0px;
-}
-H3 {
-    font-size:17px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-footer {
-    margin-top:7px;
-}
-footer .container {
-    width:96%;
-    font-size:12px;
-}
-footer .whats-logo {
-    width:35px;
-    height:35px;
-}
-footer .face-logo {
-    width:32px;
-    height:32px;
-}
-}
 
 @media only screen and (min-width:396px) and (max-width:460px) {
 .logo {
@@ -368,4 +294,85 @@ footer .face-logo {
     width:35px;
     height:35px;
 }
+}
+
+/*RESPONSIVIDADE CELULAR PEQUENO*/
+
+@media (max-width:395px) {
+    .logo {
+        margin-left:8px;
+    }
+    .menu-opener {
+        display:flex;
+        height:40px;
+        padding-right:15px;
+        width:45px;
+    }
+    nav {
+        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
+        display:none;
+        height:auto;
+        justify-content: center;
+        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
+        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
+        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
+        width:40vw; /*largura de 40% da página*/
+        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
+    }
+    nav ul {
+        flex-direction:column; /*mantem um link abaixo do outro*/
+        padding:0px;
+    }
+    nav ul li {
+        font-size:15px;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    nav ul li a {
+        padding:0;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        width:100%;
+        font-size:13px;
+    }
+    .container {
+        width:96%;
+        align-items: center;
+    }
+    .videos-table {
+        justify-content: center;
+    }
+    iframe {
+        width:280px;
+        height:158px;
+    }
+    H1 {
+        font-size:19px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+    }
+    H3 {
+        font-size:17px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    footer {
+        margin-top:7px;
+    }
+    footer .container {
+        align-content:center;
+        font-size:10px;
+        padding:3px;
+    }
+    footer .whats-logo {
+        height: 33px;
+        width: 33px;
+    }
+    footer .face-logo {
+        height: 30px;
+        width: 30px;
+    }
 }

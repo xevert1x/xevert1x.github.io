@@ -58,29 +58,28 @@ nav ul li a:hover {
 /* área do banner */
 
 .banner {
-    display: flex;
     align-items: center;
     background-image: url(../images/banner.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
     height:calc(100vh - 70px);
 }
 .banner-body {
     display: flex;
     flex-direction: column;
-    width: 1100px;
     margin: auto;
+    padding: 10px;
+    width: 1100px;
 }
 .banner h1 {
     color: #FFF;
     font-size:50px;
-    margin-left: 12px;
     text-shadow: 2px 3px 5px #333;
 }
 .banner h3 {
     font-size:28px;
     color: #FFF;
-    margin-left: 12px;
     text-shadow: 2px 3px 5px #333;
 }
 .highlights {
@@ -218,13 +217,15 @@ footer .face-logo {
     nav ul li:last-child {
         margin-bottom: 0px;
     }
+
+    .banner-body {
+        padding: 10px;
+    }
     .banner h1 {
-        margin-left:5px;
         font-size:38px;
         text-align:center;
     }
     .banner h3 {
-        margin-left:5px;
         font-size:21px;
         text-align:center;
     }
@@ -253,54 +254,63 @@ footer .face-logo {
 
 }
 
-/* RESPONSIVIDADE CELULAR */
+/* RESPONSIVIDADE CELULAR ATÉ 395PX*/
 
 @media (max-width:395px) {
     .logo {
-        margin-left:10px;
+        margin-left:8px;
     }
     .menu-opener {
         display:flex;
-        width:60px;
-        height:45px;
+        height:40px;
         padding-right:15px;
+        width:60px;
     }
     nav {
+        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
         display:none;
-        position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-        z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-        top:70px; /* para deixar na altura 70px, position:absolute acionado */
-        right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-        background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-        width:40vw; /* largura de 40% da página */
         height:auto;
         justify-content: center;
+        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
+        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
+        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
+        width:40vw; /*largura de 40% da página*/
+        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
     }
     nav ul {
-        flex-direction:column; /* para manter um link abaixo do outro */
+        flex-direction:column; /*mantem um link abaixo do outro*/
         padding:0px;
     }
     nav ul li {
-        margin-bottom:21px;
-        font-size:16px;
+        font-size:15px;
         justify-content: center;
+        margin-bottom:20px;
     }
     nav ul li a {
-        padding:0px 0px 0px 0px;
+        padding:0;
     }
     nav ul li:last-child {
         margin-bottom: 0px;
     }
+
+    .banner-body {
+        padding: 5px;
+    }
     .banner h1 {
-        margin-left:2px;
-        font-size:35px;
+        font-size:32px;
         text-align:center;
     }
     .banner h3 {
-        margin-left:2px;
         font-size:18px;
         text-align:center;
     }
+
+    .carousel-item img {
+        width: 300px;
+        text-align: center;
+    }
+
+    /* HIGHLIGHTS
     .hightlights-body {
         width:98%;
         align-items:center;
@@ -315,16 +325,19 @@ footer .face-logo {
         font-size:13px;
         margin-bottom:6px;
         width:300px;
-    }
-    footer .container {
-        width:98%;
-        font-size:12px;
-        align-content:center;
-        padding:5px;
-    }
+    } */
 
-    .carousel-item img {
-        width: 300px;
-        text-align: center;
+    footer .container {
+        align-content:center;
+        font-size:10px;
+        padding:3px;
+    }
+    footer .whats-logo {
+        height: 33px;
+        width: 33px;
+    }
+    footer .face-logo {
+        height: 30px;
+        width: 30px;
     }
 }
