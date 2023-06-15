@@ -72,13 +72,15 @@ nav ul li a:hover {
     margin: auto;
 }
 .banner h1 {
-    font-size:50px;
     color: #FFF;
+    font-size:50px;
+    margin-left: 12px;
     text-shadow: 2px 3px 5px #333;
 }
 .banner h3 {
     font-size:28px;
     color: #FFF;
+    margin-left: 12px;
     text-shadow: 2px 3px 5px #333;
 }
 .highlights {
@@ -159,6 +161,18 @@ footer .face-logo {
 }
 
 
+/* boostrap corrections */
+
+.carousel-item {
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: rgb(30, 30, 30);
+    padding: 0;
+    margin: 0px;
+}
 
 
 /* ÁREA DE RESPONSIVIDADE */
@@ -205,13 +219,13 @@ footer .face-logo {
         margin-bottom: 0px;
     }
     .banner h1 {
-        margin-left:0px;
-        font-size:40px;
+        margin-left:5px;
+        font-size:38px;
         text-align:center;
     }
     .banner h3 {
-        margin-left:0px;
-        font-size:22px;
+        margin-left:5px;
+        font-size:21px;
         text-align:center;
     }
     .hightlights-body {
@@ -231,6 +245,12 @@ footer .face-logo {
         align-content:center;
         padding:6px;
     }
+
+    .carousel-item img {
+        width: 375px;
+        text-align: center;
+    }
+
 }
 
 /* RESPONSIVIDADE CELULAR */
@@ -272,13 +292,13 @@ footer .face-logo {
         margin-bottom: 0px;
     }
     .banner h1 {
-        margin-left:0px;
-        font-size:40px;
+        margin-left:2px;
+        font-size:35px;
         text-align:center;
     }
     .banner h3 {
-        margin-left:0px;
-        font-size:19px;
+        margin-left:2px;
+        font-size:18px;
         text-align:center;
     }
     .hightlights-body {
@@ -301,5 +321,10 @@ footer .face-logo {
         font-size:12px;
         align-content:center;
         padding:5px;
+    }
+
+    .carousel-item img {
+        width: 300px;
+        text-align: center;
     }
 }

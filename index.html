@@ -1,50 +1,266 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>XevertonX Cheap Travels</title>
-<meta charset="utf-8"/>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-<META NAME="viewport" content="width=device-width, user-scalable=0" />
+    <title>XevertonX Cheap Travels</title>
+    <meta charset="utf-8"/>
 
-<script type="text/javascript">
-window.onload = function(){
-    document.querySelector(".menu-opener").addEventListener("click", function(){
-            if(document.querySelector(".header nav").style.display == 'flex') {
-            document.querySelector(".header nav").style.display = 'none';
-        } else {
-            document.querySelector(".header nav").style.display = 'flex';
-        }
-    });
-    };
-</script>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--JAVASCRIPT NAVBAR-->
+    <META NAME="viewport" content="width=device-width, user-scalable=0" />
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu-opener").addEventListener("click", function(){
+                    if(document.querySelector(".header nav").style.display == 'flex') {
+                    document.querySelector(".header nav").style.display = 'none';
+                } else {
+                    document.querySelector(".header nav").style.display = 'flex';
+                }
+            });
+        };
+    </script>
 </head>
 <body>
 
 <header>
-<div class="header">
-<img src="assets/images/logo.png" class="logo"/>
-<img class="menu-opener" src="assets/images/menu.png" />
-<nav> <!--para indicar que o que vem a seguir é um menu-->
-<ul>
-    <li><A href="">Home</A></li>
-    <li><A href="assets/pages/hints.html">Dicas</A></li>
-    <li><A href="assets/pages/destinos.html">Destinos</A></li>
-    <li><A href="assets/pages/404.html">Fotos</A></li>
-    <li><A href="assets/pages/videos.html">Vídeos</A></li>
-    <li><A href="assets/pages/404.html">Contato</A></li>
-</ul>
-</nav>
-</div>
+    <div class="header">
+        <img src="assets/images/logo.png" class="logo"/>
+        <img class="menu-opener" src="assets/images/menu.png" />
+        <nav> <!--para indicar que o que vem a seguir é um menu-->
+            <ul>
+                <li><A href="">Home</A></li>
+                <li><A href="assets/pages/hints.html">Dicas</A></li>
+                <li><A href="assets/pages/destinos.html">Destinos</A></li>
+                <li><A href="assets/pages/404.html">Fotos</A></li>
+                <li><A href="assets/pages/videos.html">Vídeos</A></li>
+                <li><A href="assets/pages/404.html">Contato</A></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <section class="banner">
     <div class="banner-body">
-    <H1>A sua viagem começa aqui!</H1>
-    <H3>Tudo o que você precisa saber antes de preparar sua mochila</H3>
+        <H1>A sua viagem começa aqui!</H1>
+        <H3>Tudo o que você precisa saber antes de preparar sua mochila</H3>
     </div>
 </section>
 
+<section class="container-fluid">
+        <div id="caroulsel-my-pics" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets\images\main-pg-slide\01-slide-bkk.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\02-slide-budapest.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\03-slide-kiev.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\04-slide-karen-tribe.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\05-slide-moscow.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\06-slide-jakarta.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\07-slide-paris.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\08-slide-hc-malaka.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\09-slide-warsaw.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\10-slide-kuala-lumpur.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\11-slide-riga.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\12-slide-maya-bay.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\13-slide-buenos-aires.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\14-slide-amphawa.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\15-slide-berlim.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\16-slide-buenos-aires.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\17-slide-tallin.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\18-slide-seoul.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\19-slide-chiang-mai.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\20-slide-singapore.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\21-slide-vientiane.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\22-slide-ho-chi-min.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\23-slide-hc-kuala-lumpur.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\24-slide-aconcagua.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\25-slide-chiang-rai.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\26-slide-pai.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\27-slide-riga.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\28-slide-pripyat.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\29-slide-sedlec.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\30-slide-bkk.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\31-slide-kiev.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\32-slide-phnom-penh.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\33-slide-hong-kong.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\34-slide-frankfurt.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\35-slide-siem-reap.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\36-slide-chonburi.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\37-slide-pattaya.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\38-slide-moscow.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\39-slide-nakhon-nayok.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\40-slide-ayutthaya.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\41-slide-st-petersburg.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\42-slide-tallin.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\43-slide-singapore.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\44-slide-st-petersburg.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\45-slide-pattaya.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\46-slide-buenos-aires.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\47-slide-hc-jakarta.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\48-slide-chiang-mai.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\49-slide-river-kwai.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\50-slide-chiang-rai.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\51-slide-kanchanaburi.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\52-slide-seoul.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\53-slide-macau.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\54-slide-phnom-penh.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\55-slide-hc-buenos-aires.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\56-slide-ayutthaya.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\57-slide-ha-long-bay.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\58-slide-buenos-aires.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\59-slide-st-petersburg.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\60-slide-bang-pa-in.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\61-slide-hc-kuala-lumpur.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\62-slide-buenos-aires.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\63-slide-hc-ayutthaya.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\64-slide-hue.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\images\main-pg-slide\65-slide-santiago.jpg">
+                </div>
+            </div> <!--fim do carousel-inner-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#caroulsel-my-pics" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#caroulsel-my-pics" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div> <!--fim do carousel-my-pics-->
+</section>
+
+<!--
 <section class="highlights">
 <div class="hightlights-body">
     <div class="hl-title">
@@ -96,7 +312,7 @@ window.onload = function(){
             </div>
         </div>
 
-        <div class="city"> <!--início da cidade-->
+        <div class="city">
             <div class="city-img">
                 <img src="assets/images/Kyiv.jpg"/>
             </div>
@@ -109,17 +325,19 @@ window.onload = function(){
             <div class="city-desc">
                 Uma das cidades mais antigas do leste europeu. Um povo marcado por tragédias, superação e resistência.
             </div>
-        </div> <!--fim da cidade-->
+        </div>
+
     </div>
 </div>
 </section>
+-->
 
 <footer>
-<div class="container">
-    <div>© XevertonX - 2020.</div>
-    <div class="whats"><img src="assets/images/Whats_logo.png" class="whats-logo"> +55 47 99776-3596</div>
-    <div class="face"><A HREF="http://www.facebook.com/xevertonx" target="_blank"><img src="assets/images/Face_logo.png" class="face-logo"></A> - Everton Alves Rêgo</div>
-</div>
+    <div class="container">
+        <div>© XevertonX - 2020</div>
+        <div class="whats"><img src="assets/images/Whats_logo.png" class="whats-logo"> +55 47 99776-3596</div>
+        <div class="face"><A HREF="http://www.facebook.com/xevertonx" target="_blank"><img src="assets/images/Face_logo.png" class="face-logo"></A> Everton Alves Rêgo</div>
+    </div>
 </footer>
 
-</body></head>
+</body></html>
