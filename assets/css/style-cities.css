@@ -190,7 +190,7 @@ H2, H3 {
     border-top: 5px solid black;
 }
 .atracao-texto--area {
-    padding-bottom:15px;
+    padding-bottom: 15px;
     border-bottom: 3px solid black;
     width: 100%;
 }
@@ -296,121 +296,279 @@ footer .container {
 /* RESPONSIVIDADE CELULARES */
 
 
+@media (max-width:395px) {
+    .logo {
+        margin-left:8px;
+    }
+    .menu-opener {
+        display:flex;
+        height:40px;
+        padding-right:15px;
+        width:45px;
+    }
+    nav {
+        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
+        display:none;
+        height:auto;
+        justify-content: center;
+        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
+        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
+        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
+        width:40vw; /*largura de 40% da página*/
+        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
+    }
+    nav ul {
+        flex-direction:column; /*mantem um link abaixo do outro*/
+        padding:0px;
+    }
+    nav ul li {
+        font-size:15px;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    nav ul li a {
+        padding:0;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        width:98%;
+        font-size:14px;
+    }
+    .main .container {
+        align-items: center;
+        padding: 14px 12px 12px;
+        width:96%;
+    }
+    .centered-image {
+        width:280px;
+        border-radius:16px;
+        box-shadow: 3px 3px 6px #222;
+    }
+    H1 {
+        font-size:18px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+        margin-top: 12px;
+    }
+    H2, H3 {
+        font-size:16px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    .tomadas {
+        flex-wrap:wrap;
+        width:auto;
+        padding-top:6px;
+    }
+    .tomadas img {
+        width:150px;
+        padding:2px;
+    }
+    .preparacao-primeiras ul li a {
+        border-radius:5px;
+        padding:2px;
+        text-decoration:none;
+        font-size:13px;
+        width:115px;
+        height:30px;
+    }
+    .attractions-item {
+        margin:2px;
+        margin-bottom:6px;    
+    }
+    .attractions-item--pic a img {
+        width:155px;
+        height:104px;
+    }
+    .attractions-item--name {
+       font-size:13px;
+       max-width:155px;
+       height:46px;
+    }
+    atracao-texto--area {
+        max-width: 100%;
+        padding: 0px;
+    }
 
-
+    .atracao-texto--pic img {
+        width:280px;
+    }
+    .atracao-texto--nome {
+        font-size:17px;
+        margin-top:8px;
+        margin-bottom:8px;
+    }
+    .button_back {
+        width:90px;
+        height:20px;
+        border-radius:11px;
+        margin-top:10px;
+        padding:3px;
+    }
+    .button_back_country {
+        width:135px;
+        height:28px;
+        border-radius:12px;
+        margin-top:8px;
+        padding:4px;
+        text-align: center;
+        font-size: 12px;
+    }
+    footer {
+        margin-top:5px;
+    }
+    footer .container {
+        align-content:center;
+        font-size:10px;
+        padding:3px;
+    }
+    footer .whats-logo {
+        height: 33px;
+        width: 33px;
+    }
+    footer .face-logo {
+        height: 30px;
+        width: 30px;
+    }
+}
 
 @media only screen and (min-width:396px) and (max-width:460px) {
-.logo {
-    margin-left:15px;
-}
-.menu-opener {
-    display:flex;
-    width:47px;
-    height:44px;
-    padding-right:18px;
-}
-nav {
-    display:none;
-    position:absolute; /* para deixá-lo fixo em uma posição, independente de div's */
-    z-index:99; /* Para garantir que fique por cima dos demais elementos da página */
-    top:70px; /* para deixar na altura 70px, position:absolute acionado */
-    right:0px;  /* para deixar no canto direito, com o position:absolute acionado */
-    background-color: rgba(0,0,0,0.9); /* cor de fundo com transparência 90% */
-    width:40vw; /* largura de 40% da página */
-    height:auto;
-    justify-content: center;
-}
-nav ul {
-    flex-direction:column; /* para manter um link abaixo do outro */
-    padding:0px;
-}
-nav ul li {
-    margin-bottom:21px;
-    font-size:16px;
-    justify-content:center;
-}
-nav ul li a {
-    padding:0px 0px 0px 0px;
-}
-nav ul li:last-child {
-    margin-bottom:0px;
-}
-.main {
-    width:100%;
-    font-size:13px;
-}
-.container {
-    width:96%;
-    align-items:center;
-    justify-content:center;
-}
-.centered-image {
-    width:300px;
-    border-radius:17px;
-    box-shadow: 3px 3px 6px #222;
-}
-H1 {
-    font-size:18px;
-    text-shadow: 2px 3px 3px #222;
-}
-H2, H3 {
-    font-size:16px;
-    text-shadow: 2px 3px 3px #222;
-    padding:3px;
-}
-.preparacao-primeiras ul li a {
-    border-radius:5px;
-    padding:2px;
-    text-decoration:none;
-    font-size:13px;
-    width:125px;
-    height:34px;
-}
-.tomadas {
-    flex-wrap:wrap;
-    width:auto;
-    padding-top:6px;
-}
-.tomadas img {
-    width:165px;
-    padding:2px;
-}
-.attractions-item { /* foto + nome individuais */
-    margin: 2px;
-    margin-bottom:6px;
-}
-.attractions-item--pic a img {
-    width:178px;
-    height:119px;
-}
-.attractions-item--name {
-   font-size:14px;
-   max-width:178px;
-   height:46px;
-}
-.atracao-texto--pic img {
-    width:300px;
-}
-.atracao-texto--nome {
-    font-size:16px;
-    margin-top:9px;
-    margin-bottom:9px;
-}
-footer {
-    margin-top:6px;
-}
-footer .container {
-    width:97%;
-    font-size:12px;
-}
-.whats-logo {
-    width:42px;
-    height:42px;
-}
-.face-logo {
-    width:36px;
-    height:36px;
-}
+    .logo {
+        margin-left:10px;
+    }
+    .menu-opener {
+        display:flex;
+        height:44px;
+        padding-right:18px;
+        width:47px;
+    }
+    nav {
+        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
+        display:none;
+        height:auto;
+        justify-content: center;
+        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
+        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
+        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
+        width:40vw; /*largura de 40% da página*/
+        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
+    }
+    nav ul {
+        flex-direction:column; /*mantem um link abaixo do outro*/
+        padding:0px;
+    }
+    nav ul li {
+        font-size:16px;
+        justify-content: center;
+        margin-bottom:21px;
+    }
+    nav ul li a {
+        padding:0;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .main {
+        width:98%;
+        font-size:14px;
+    }
+    .main .container {
+        align-items: center;
+        padding: 11px 13px;
+        width:96%;
+    }
+    .centered-image {
+        width:300px;
+        border-radius:17px;
+        box-shadow: 3px 3px 6px #222;
+    }
+    H1 {
+        font-size:19px;
+        text-shadow: 2px 3px 3px #222;
+        padding:0px;
+        margin-top: 22px;
+    }
+    H2, H3 {
+        font-size:16px;
+        text-shadow: 2px 3px 3px #222;
+        padding:3px;
+    }
+    .tomadas {
+        flex-wrap:wrap;
+        width:auto;
+        padding-top:6px;
+    }
+    .tomadas img {
+        width:165px;
+        padding:2px;
+    }
+    .preparacao-primeiras ul li a {
+        border-radius:5px;
+        padding:2px;
+        text-decoration:none;
+        font-size:13px;
+        width:115px;
+        height:30px;
+    }
+    .attractions-item {
+        margin:2px;
+        margin-bottom:6px;    
+    }
+    .attractions-item--pic a img {
+        width:179px;
+        height:119px;
+    }
+    .attractions-item--name {
+       font-size:13px;
+       max-width:179px;
+       height:46px;
+    }
+    atracao-texto--area {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .atracao-texto--pic img {
+        width:300px;
+    }
+    .atracao-texto--nome {
+        font-size:17px;
+        margin-top:9px;
+        margin-bottom:9px;
+    }
+    .button_back {
+        width:96px;
+        height:22px;
+        border-radius:11px;
+        margin-top:10px;
+        padding:2px;
+    }
+    .button_back_country {
+        width:140px;
+        height:30px;
+        border-radius:12px;
+        margin-top:8px;
+        padding:4px;
+        text-align: center;
+        font-size: 13px;
+    }
+    footer {
+        margin-top:5px;
+    }
+    footer .container {
+        align-content:center;
+        font-size:10px;
+        padding:3px;
+    }
+    footer .whats-logo {
+        height: 33px;
+        width: 33px;
+    }
+    footer .face-logo {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 /* responsividade tablets */
@@ -463,6 +621,7 @@ nav ul li:last-child {
 H1 {
     font-size:20px;
     text-shadow: 2px 3px 3px #222;
+    margin-top: 25px;
 }
 H2, H3 {
     font-size:16px;
@@ -518,136 +677,4 @@ footer .container {
     width:36px;
     height:36px;
 }
-}
-
-@media (max-width:395px) {
-    .logo {
-        margin-left:8px;
-    }
-    .menu-opener {
-        display:flex;
-        height:40px;
-        padding-right:15px;
-        width:45px;
-    }
-    nav {
-        background-color: rgba(0,0,0,0.9); /*cor de fundo c/ transparência 90%*/
-        display:none;
-        height:auto;
-        justify-content: center;
-        position:absolute; /*para deixá-lo fixo numa posição, independente de div's*/
-        right:0px;  /*alinha no canto direito, com position:absolute acionado*/
-        top:70px; /*deixa na altura 70px, com position:absolute acionado*/
-        width:40vw; /*largura de 40% da página*/
-        z-index:99; /*garante que fique por cima dos demais elementos da pg*/ 
-    }
-    nav ul {
-        flex-direction:column; /*mantem um link abaixo do outro*/
-        padding:0px;
-    }
-    nav ul li {
-        font-size:15px;
-        justify-content: center;
-        margin-bottom:20px;
-    }
-    nav ul li a {
-        padding:0;
-    }
-    nav ul li:last-child {
-        margin-bottom: 0px;
-    }
-    .main {
-        width:98%;
-        font-size:14px;
-    }
-    .main .container {
-        align-items: center;
-        padding-top: 14px;
-        width:96%;
-    }
-    .centered-image {
-        width:280px;
-        border-radius:16px;
-        box-shadow: 3px 3px 6px #222;
-    }
-    H1 {
-        font-size:18px;
-        text-shadow: 2px 3px 3px #222;
-        padding:0px;
-    }
-    H2, H3 {
-        font-size:16px;
-        text-shadow: 2px 3px 3px #222;
-        padding:3px;
-    }
-    .tomadas {
-        flex-wrap:wrap;
-        width:auto;
-        padding-top:6px;
-    }
-    .tomadas img {
-        width:150px;
-        padding:2px;
-    }
-    .preparacao-primeiras ul li a {
-        border-radius:5px;
-        padding:2px;
-        text-decoration:none;
-        font-size:13px;
-        width:115px;
-        height:30px;
-    }
-    .attractions-item {
-        margin:2px;
-        margin-bottom:6px;    
-    }
-    .attractions-item--pic a img {
-        width:155px;
-        height:104px;
-    }
-    .attractions-item--name {
-       font-size:13px;
-       max-width:155px;
-       height:46px;
-    }
-    .atracao-texto--pic img {
-        width:280px;
-    }
-    .atracao-texto--nome {
-        font-size:17px;
-        margin-top:8px;
-        margin-bottom:8px;
-    }
-    .button_back {
-        width:90px;
-        height:20px;
-        border-radius:11px;
-        margin-top:10px;
-        padding:3px;
-    }
-    .button_back_country {
-        width:135px;
-        height:28px;
-        border-radius:12px;
-        margin-top:8px;
-        padding:4px;
-        text-align: center;
-        font-size: 12px;
-    }
-    footer {
-        margin-top:5px;
-    }
-    footer .container {
-        align-content:center;
-        font-size:10px;
-        padding:3px;
-    }
-    footer .whats-logo {
-        height: 33px;
-        width: 33px;
-    }
-    footer .face-logo {
-        height: 30px;
-        width: 30px;
-    }
 }
