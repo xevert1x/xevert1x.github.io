@@ -102,13 +102,13 @@ H2 {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:98%;
+    width:97%;
 }
 .country-box {
+    align-items: center;
     display:flex;
     flex-direction:column;
-    align-items: center;
-    justify-content:baseline; /*altura*/
+    margin: 5px;
     text-align: center;
 }
 .country-name {
@@ -227,7 +227,9 @@ footer .face-logo {
         text-shadow: 2px 3px 3px #222;
         padding:3px;
     }
-    
+    .country-box {
+        margin: 3px;
+    }
     .country-name {
         font-size: 16px;
         padding-bottom: 8px;
@@ -314,7 +316,9 @@ footer .face-logo {
         text-shadow: 2px 3px 3px #222;
         padding:3px;
     }
-
+    .country-box {
+        margin: 3px;
+    }
     .country-name {
         font-size: 19px;
         padding-bottom: 9px;
@@ -405,6 +409,9 @@ footer .face-logo {
         font-size:18px;
         text-shadow: 2px 3px 3px #222;
         padding:3px;
+    }
+    .country-box {
+        margin: 3px;
     }
     .country-name {
         font-size: 18px;

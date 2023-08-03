@@ -106,9 +106,8 @@ footer {
 footer .container {
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
-    width:98%;
 }
 footer .whats-logo {
     width:50px;
