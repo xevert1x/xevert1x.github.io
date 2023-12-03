@@ -13,12 +13,12 @@ body {
 /* area do menu */
 
 header {
-    display:block;
+    display: block;
     margin-bottom:70px;
 }
 .header {
     display:flex;
-    justify-content:space-between; /* para deixar o conteúdo nas pontas */
+    justify-content: space-between; /* para deixar o conteúdo nas pontas */
     align-items:center;
     background-color: rgb(30, 30, 30);
     color: #b99224;
@@ -27,7 +27,7 @@ header {
     text-transform: uppercase;
     font-weight:700;
     position:fixed; /* para deixar o menu superior fixo */
-    top:0; /* para deixar o menu superior fixo */
+    top:0; /* para deixar o menu superior fixo no alto */
 }
 .logo {
     margin-left:10px;
